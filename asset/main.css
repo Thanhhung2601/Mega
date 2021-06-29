@@ -1,0 +1,492 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Roboto, Arial, sans-serif;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .main-body {
+        background-color: #F5F5F5;
+    }
+    
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .header .top {
+        height: 33px;
+        background-color: #F6F6F6
+    }
+    
+    .top>.container {
+        display: flex;
+        height: 33px;
+        padding: 4px;
+        line-height: 25px;
+        justify-content: space-between;
+    }
+    
+    .top .container a {
+        font-size: .8rem;
+        color: #333;
+    }
+    
+    .top .services-left ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    .top .services-left ul li i {
+        color: #e00;
+        padding-right: 4px;
+    }
+    
+    .top .services-left ul li:last-child {
+        background-color: #DDDDDD;
+        padding: 0 14px;
+        border-radius: 20px;
+    }
+    
+    .top .login-right a {
+        font-size: .88rem;
+    }
+    
+    .top .login-right a i {
+        padding-right: 4px;
+    }
+    
+    .highlight-tt {
+        background-color: white;
+    }
+    
+    .highlight-tt>.container {
+        flex-wrap: nowrap !important;
+    }
+    
+    .highlight-tt .hl-flex {
+        height: 94px;
+        display: flex;
+    }
+    
+    .highlight-tt .hl-flex .logo-web {
+        width: 240px;
+    }
+    
+    .highlight-tt .hl-flex .logo-web img {
+        width: 100%;
+        height: 94px;
+        object-fit: cover;
+    }
+    
+    .highlight-tt .hl-flex .search {
+        margin: auto 0;
+    }
+    
+    .highlight-tt .hl-flex .search .all-list {
+        border: 1px solid#d9d9d9;
+        border-radius: 4px;
+    }
+    
+    .search .all-list input {
+        border: none;
+        outline: none;
+        font-size: .9rem;
+        padding-right: 60px;
+    }
+    
+    .search .all-list span {
+        display: inline-block;
+        padding: 6px 12px 6px 8px;
+        font-size: .9rem;
+    }
+    
+    .search .all-list>i {
+        display: inline-block;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        margin-top: 2px;
+        margin-right: 2px;
+        background-color: #ec3237;
+    }
+    
+    .highlight-tt .hl-flex .clothes-seen {
+        margin: auto 0;
+        background-color: #ec3237;
+        color: white;
+        height: 34px;
+        line-height: 34px;
+        padding: 0 10px;
+        font-size: .85rem;
+        border-radius: 4px;
+        margin-left: 22px;
+    }
+    
+    .clothes-seen span i {
+        position: relative;
+        bottom: 2px;
+        left: 2px;
+    }
+    
+    .highlight-tt .hl-flex .choose-item-right {
+        margin: auto 0;
+        padding-left: 20px;
+    }
+    
+    .highlight-tt .hl-flex .choose-item-right ul li {
+        display: inline-block;
+        width: 81px;
+    }
+    
+    .choose-item-right ul li i {
+        font-size: 1.65rem;
+        padding-bottom: 8px;
+        color: #ec3237;
+    }
+    
+    .choose-item-right ul li p {
+        font-size: .75rem;
+        font-weight: 600;
+    }
+    
+    .choose-item-right .item {
+        padding-top: 8px;
+        text-align: center;
+    }
+    
+    .navigation-main {
+        width: 100%;
+        position: relative;
+        box-shadow: 0 2px 5px 0 #cecece;
+    }
+    
+    .navigation-main::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ec3237;
+        top: -2px;
+    }
+    
+    .navigation-main .nav-row {
+        height: 40px;
+        display: flex;
+    }
+    
+    .navigation-main .nav-row .list-nav {
+        position: relative;
+        width: 240px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        background-color: #ec3237;
+    }
+    
+    .navigation-main .nav-row .list-nav h3 {
+        position: relative;
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .navigation-main .nav-row .list-nav h3::before {
+        content: "";
+        position: absolute;
+        width: calc(100% + 20px);
+        height: 2px;
+        background-color: white;
+        top: -2px;
+        left: -10px;
+    }
+    
+    .nav-row .list-nav h3 i {
+        padding-right: 5px;
+        font-size: 1.25rem;
+    }
+    
+    .navigation-main .nav-row .infor-review {
+        margin: auto 0;
+        padding-left: 20px;
+        flex: 1;
+    }
+    
+    .nav-row .infor-review i {
+        padding-right: 12px;
+        font-size: 1.2rem;
+        color: #ff6600;
+    }
+    
+    .nav-row .list-item {
+        height: 480px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: white;
+    }
+    
+    .nav-row .list-item>ul>li {
+        height: 33.6px;
+        line-height: 33.6px;
+        padding: 0 10px;
+        font-size: .9rem;
+        border-bottom: 1px solid#f2f2f2;
+    }
+    
+    .nav-row .list-item>ul>li:hover .item-information {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .nav-row .list-item ul li:last-child {
+        border: none
+    }
+    
+    .nav-row .list-item ul li i {
+        width: 30px;
+    }
+    
+    .nav-row .list-item .item-information {
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transform: translateX(240px);
+        z-index: 2;
+        width: 960px;
+        background-color: white;
+        flex-wrap: wrap;
+        opacity: 0;
+        transition: .2s linear;
+        border: 1px solid#cccccc;
+        padding: 4px 12px;
+    }
+    
+    .nav-row .list-item .item-information .clothes {
+        flex-basis: 20%;
+    }
+    
+    .nav-row .list-item .item-information .clothes ul li:first-child {
+        color: #ec3237;
+        font-weight: 700;
+        font-size: .9rem;
+    }
+    
+    .header__slider {
+        padding-left: 240px;
+        padding-top: 40px;
+    }
+    
+    .header__slider img {
+        width: 100%;
+        height: 410px;
+        object-fit: cover;
+    }
+    
+    .header__slider .owl-nav {
+        display: none;
+    }
+    
+    .header__slider .owl-dots {
+        padding-top: 12px;
+    }
+    
+    .slider-text p {
+        height: 40px;
+        line-height: 40px;
+        background-color: #F8E5E4;
+        margin-top: 22px;
+    }
+    
+    .slider-text p span {
+        position: relative;
+        color: white;
+        display: inline-block;
+        margin-right: 60px;
+        background-color: #ec3237;
+        padding-left: 16px;
+    }
+    
+    .slider-text p span::before {
+        content: "";
+        position: absolute;
+        border: 20px solid;
+        border-color: transparent transparent transparent #ec3237;
+        right: -40px;
+    }
+    
+    .option-right {
+        position: fixed;
+        z-index: 2;
+        top: 246px;
+        right: 0;
+    }
+    
+    .option-right .option-right__icon {
+        margin: 0 8px 4px 0;
+    }
+    
+    .option-right .option-right__icon i {
+        padding: 10px;
+        border-radius: 100%;
+        color: white;
+    }
+    
+    .option-right .fix-bg-fb {
+        text-align: center;
+    }
+    
+    .option-right .fix-bg-fb i {
+        padding: 10px 14px;
+        background-color: #3b5998;
+    }
+    
+    .option-right .fix-bg-yt i {
+        background-color: #cf2200;
+    }
+    
+    .option-right .fix-bg-mail i {
+        background-color: #fd5707;
+    }
+    
+    .option-right .fix-bg-phone i {
+        background-color: #ec3237;
+    }
+    
+    .option-right .fix-bg-messi {
+        background: #ff8e09;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .infor-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .infor-title .review {
+        margin: auto 0;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .infor-title .review ul li {
+        display: inline-block;
+        padding: 0 8px;
+        font-size: .9rem;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .infor-title .review ul li:last-child a {
+        color: #ec3237 !important;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .carousel-custum {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 350px;
+        background-color: white;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .carousel-custum .item-custum {
+        padding: 10px;
+        min-height: 350px;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .carousel-custum .item-custum>a {
+        display: block;
+        position: relative;
+        padding-top: 100%;
+        overflow: hidden;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .carousel-custum .item-custum img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        max-width: 90%;
+        max-height: 90%;
+        width: auto !important;
+        height: auto !important;
+        margin: auto;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .owl-item:hover {
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.61);
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.61);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.61);
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .owl-item,
+    .slider-Allclothes .slider-Allclothes__item .carousel-custum .item-custum img {
+        transition: all 0.2s ease;
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .carousel-custum .item-custum img:hover {
+        transform: scale(1.1);
+    }
+    
+    .slider-Allclothes .slider-Allclothes__item .carousel-custum .item-custum .name-clothes {
+        padding: 14px 0;
+        font-size: .9rem;
+    }
+    
+    .carousel-custum .item-custum .price-clothes {
+        padding-top: 4px;
+        color: #ec3237;
+        font-weight: 600;
+    }
+    
+    .carousel-custum .item-custum .icon-bottom {
+        padding-top: 20px;
+        text-align: right;
+        color: #8c8c8c;
+    }
+    
+    .slider-Allclothes .owl-dots {
+        display: none;
+    }
+    
+    .carousel-custum .owl-nav {
+        font-size: 3rem;
+    }
+    
+    .carousel-custum .owl-nav button {
+        background: none !important;
+        color: #b3b3b3 !important;
+    }
+    
+    .carousel-custum .owl-nav button:hover {
+        color: #4d4d4d !important;
+    }
+    
+    .carousel-custum .owl-prev {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .carousel-custum .owl-next {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
