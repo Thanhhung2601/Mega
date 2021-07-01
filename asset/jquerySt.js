@@ -16,12 +16,15 @@ $('.slider-Allclothes .owl-carousel').owlCarousel({
     nav: true,
     responsive: {
         0: {
-            items: 1
+            items: 2
         },
         600: {
             items: 3
         },
-        1000: {
+        900: {
+            items: 3
+        },
+        1200: {
             items: 5
         }
     },
