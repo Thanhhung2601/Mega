@@ -449,7 +449,7 @@
     .option-right {
         position: fixed;
         z-index: 2;
-        top: 246px;
+        top: 50%;
         right: 0;
     }
     
@@ -965,6 +965,9 @@
         .slider-Allclothes__item .infor-title .review ul li:not(:last-child) {
             display: none;
         }
+        .option-right {
+            top: 60% !important;
+        }
     }
     
     @media screen and (max-width:768px) {
@@ -987,7 +990,7 @@
             padding: 20px 30px;
         }
         .option-right {
-            top: 450px;
+            top: 60%;
         }
         .ic-scroll-top {
             margin-right: 5px;
