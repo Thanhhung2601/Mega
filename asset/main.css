@@ -21,6 +21,8 @@
     
     .main-body {
         background-color: #F5F5F5;
+        transition: .3s ease;
+        overflow: hidden;
     }
     
     .container {
@@ -495,7 +497,7 @@
         right: 0;
         background-color: rgba(0, 0, 0, 0.7);
         z-index: 900;
-        animation: tras .3s linear
+        animation: tras .3s linear;
     }
     
     .active-overlay {
@@ -702,6 +704,7 @@
         border-radius: 100%;
         cursor: pointer;
         transition: .3s ease;
+        z-index: 99;
     }
     
     .ic-scroll-top:hover {
@@ -719,7 +722,7 @@
     }
     
     .newletter {
-        background: url(/img/unnamed.jpg) center center no-repeat;
+        background: url(https://www.verdict.co.uk/wp-content/uploads/2021/04/shutterstock_1583248045.jpg) center center no-repeat;
         background-size: cover;
         padding: 40px 0;
     }
@@ -728,6 +731,7 @@
         display: flex;
         align-items: center;
         padding: 0 50px;
+        flex-wrap: wrap;
     }
     
     .newletter .container .infor-left h2 {
@@ -763,6 +767,7 @@
     
     .review-bottom {
         display: flex;
+        flex-wrap: wrap;
         padding-top: 20px;
     }
     
@@ -781,4 +786,224 @@
     
     .review-bottom .infor-item ul li i {
         width: 40px;
+    }
+    
+    .nav-responsive {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 900;
+        height: 50px;
+        box-shadow: 0 2px 5px 0 #cecece;
+    }
+    
+    .nav-responsive-top {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding: 0 30px;
+        background-color: white;
+    }
+    
+    .nav-responsive-top__ingredient form {
+        display: flex;
+        align-items: center;
+        border: 1px solid #cccccc;
+        justify-content: space-between;
+        margin: 0 12px;
+        padding: 0 8px;
+        border-radius: 4px;
+    }
+    
+    .nav-responsive-top__ingredient form input {
+        border: none;
+        outline: none;
+        padding: 8px 0;
+    }
+    
+    .nav-responsive-top .nav-responsive-top__ingredient i {
+        font-size: 1.8rem;
+        color: #ec3237;
+        cursor: pointer;
+    }
+    
+    .nav-responsive-top .nav-responsive-top__ingredient .icon-left {
+        padding-right: 8px;
+    }
+    
+    .nav-responsive-top .nav-responsive-top__ingredient .icon-df {
+        font-size: 1rem;
+        color: #999999;
+    }
+    
+    .nav-responsive-top .fix-df {
+        flex: 1;
+    }
+    
+    .nav-responsive-top img {
+        width: 65px;
+        height: auto;
+    }
+    
+    .menu-left {
+        position: fixed;
+        background-color: white;
+        width: 280px;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        transform: translateX(-100%);
+        transition: .3s ease;
+        z-index: 1000;
+    }
+    
+    .menu-left.active-menu-left {
+        transform: translateX(0%);
+    }
+    
+    .menu-left .item {
+        padding: 10px 12px;
+    }
+    
+    .menu-left .item>a>i {
+        width: 30px;
+    }
+    
+    .menu-left ul li {
+        position: relative;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    
+    .menu-left ul li a {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 12px;
+        font-size: .9rem;
+    }
+    
+    .menu-left ul li i {
+        position: absolute;
+        font-size: 1.2rem;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 8px;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+    
+    .menu-left .subnav-mobile {}
+    
+    .subnav-mobile.active-subnav-mobile {
+        display: block !important;
+    }
+    
+    .menu-left .subnav-mobile>li {
+        border: none !important;
+    }
+    
+    .menu-left .subnav-mobile>li>a {
+        display: inline-block !important;
+        padding: 10px 22px !important;
+        background-color: #e6e6e6;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(360deg, #ff8080, #ec3237);
+        border-radius: 4px;
+    }
+    
+    @media screen and (max-width:1024px) {
+        .container {
+            width: 640px;
+            margin: 0 auto;
+        }
+        .header__slider {
+            margin-top: 50px;
+        }
+        .header__slider img {
+            max-width: 100%;
+            height: auto;
+        }
+        .nav-responsive {
+            display: block;
+        }
+        .top,
+        .highlight-tt,
+        .navigation-main {
+            display: none;
+        }
+        .header__slider {
+            padding: 0;
+        }
+        .slider-text p {
+            height: auto;
+        }
+        .newletter .container {
+            padding: 0;
+        }
+        .newletter .container .infor-left {
+            flex-basis: 100%;
+            text-align: center;
+            padding-bottom: 14px;
+        }
+        .newletter form {
+            flex-basis: 100%;
+            margin-left: 0px !important;
+            justify-content: space-between;
+        }
+        .review-bottom .infor-item {
+            flex-basis: 100%;
+            padding: 16px 0;
+        }
+        .slider-Allclothes__item .infor-title .review ul li:not(:last-child) {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .container {
+            width: 100%;
+        }
+        .options-left {
+            display: none;
+        }
+        .slider-text {
+            padding: 0 12px;
+        }
+        footer .newletter {
+            padding: 40px 16px;
+        }
+        .newletter form input {
+            width: auto !important;
+        }
+        footer .review-bottom {
+            padding: 20px 30px;
+        }
+        .option-right {
+            top: 450px;
+        }
+        .ic-scroll-top {
+            margin-right: 5px;
+        }
+    }
+    
+    @media screen and (max-width:440px) {
+        .nav-responsive .nav-responsive-top {
+            padding: 0 8px !important;
+        }
+        .slider-text {
+            padding: 0 8px;
+            font-size: .85rem;
+        }
+        .review-bottom .infor-item img {
+            width: 100%;
+            height: auto;
+        }
     }

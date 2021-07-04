@@ -35,3 +35,9 @@ $('.slider-Allclothes .owl-carousel').owlCarousel({
 
 
 });
+const btn = $(".menu-left > ul > li > i");
+$(".subnav-mobile").slideUp();
+btn.on("click", function() {
+    $(this).next().slideToggle("fast");
+    $(this).addClass("arrow-rotate");
+});
