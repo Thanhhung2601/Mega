@@ -16,21 +16,23 @@ $('.slider-Allclothes .owl-carousel').owlCarousel({
     nav: true,
     responsive: {
         0: {
-            items: 2
+            items: 2,
+            autoplay: false,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: false,
         },
         600: {
             items: 3
         },
-        900: {
-            items: 3
-        },
+
         1200: {
-            items: 5
+            items: 5,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true,
         }
     },
-    autoplay: true,
-    autoplayTimeout: 2500,
-    autoplayHoverPause: true,
+
     smartSpeed: 1000
 
 

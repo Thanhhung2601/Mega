@@ -498,6 +498,7 @@
         background-color: rgba(0, 0, 0, 0.7);
         z-index: 900;
         animation: tras .3s linear;
+        cursor: pointer;
     }
     
     .active-overlay {
@@ -848,6 +849,7 @@
     }
     
     .menu-left {
+        overflow: scroll;
         position: fixed;
         background-color: white;
         width: 280px;

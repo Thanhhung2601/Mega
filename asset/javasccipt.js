@@ -37,6 +37,7 @@ iconBars.addEventListener("click", () => {
     overlay.classList.add("active-overlay");
 })
 overlay.addEventListener("click", () => {
+    form_registration.classList.remove("active-form-registration");
     document.querySelector(".menu-left").classList.remove("active-menu-left");
     overlay.classList.remove("active-overlay");
 })
